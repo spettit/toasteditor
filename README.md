@@ -1,6 +1,6 @@
 # toasteditor
 
-Add a simple wysiwyg editor to your svelte project
+Add a simple wysiwyg editor to svelte and sveltekit projects
 
 This is a wrapper around Toast UI Editor
 
