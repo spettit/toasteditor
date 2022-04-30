@@ -1,5 +1,4 @@
 <script>
-	// import Editor from '@toast-ui/editor';
 	import '@toast-ui/editor/dist/toastui-editor.css';
 	import { onMount } from 'svelte';
 
@@ -11,7 +10,6 @@
 
 	onMount(async () => {
 		const EditorImport = await import('@toast-ui/editor');
-		console.log(EditorImport);
 		const Editor = EditorImport.default;
 		editor = new Editor({
 			el: element,
@@ -28,16 +26,9 @@
 		}
 	});
 
-	// const createEditor = (node) => {
-
-	// };
-
 	const handleChange = () => {
 		htmlOutput = editor.getHTML();
 	};
 </script>
 
 <div id="editor" bind:this={element} />
-
-<style>
-</style>
